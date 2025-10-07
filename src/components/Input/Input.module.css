@@ -1,0 +1,20 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-grow: 1;
+}
+
+.label{
+    font-size: 14px;
+    color: #ffffff50;
+}
+
+.input{
+    padding: 4px 16px;
+    border: solid 1px #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+}
