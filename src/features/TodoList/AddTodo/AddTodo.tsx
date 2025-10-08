@@ -2,11 +2,11 @@ import { useState, type ChangeEvent } from "react";
 
 import { Button, Input } from "@/components";
 
+import type { TodoType } from "../types";
 import s from "./AddTodo.module.css";
-import type { Todo } from "../types";
 
 type Props = {
-  addTodo: (todo: Todo) => void;
+  addTodo: (todo: TodoType) => void;
 };
 
 export const AddTodo = ({ addTodo }: Props) => {
@@ -20,7 +20,7 @@ export const AddTodo = ({ addTodo }: Props) => {
     addTodo({
       id: crypto.randomUUID(),
       title: value,
-      status: "pending",
+      checked: false,
     });
     setValue("");
   };
@@ -28,7 +28,7 @@ export const AddTodo = ({ addTodo }: Props) => {
   return (
     <div className={s.root}>
       <Input
-        label="Todo"
+        label="New Todo"
         value={value}
         onChange={onChangeHandler}
         placeholder="Enter todo..."

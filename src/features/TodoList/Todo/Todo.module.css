@@ -1,0 +1,25 @@
+.root {
+  border-bottom: solid 1px #5850dd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  gap: 12px;
+
+  .flexWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  input[type="checkbox"] {
+    accent-color: #c56fff;
+    width: 25px;
+    height: 25px;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

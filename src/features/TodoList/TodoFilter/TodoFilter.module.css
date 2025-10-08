@@ -1,0 +1,20 @@
+.root {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin: 8px 0;
+}
+
+.tab {
+  all: unset;
+  cursor: pointer;
+  background: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  height: 100%;
+  padding: 0 12px;
+}
+
+.active {
+  outline: solid 2px #5850dd;
+}

@@ -1,5 +1,5 @@
-export type Todo = {
+export type TodoType = {
   id: string;
   title: string;
-  status: "done" | "pending";
+  checked: boolean;
 };
